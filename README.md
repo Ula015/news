@@ -1,5 +1,7 @@
 # news-app
 
+### Описание проекта
+
 ## Project setup
 ```
 npm install
