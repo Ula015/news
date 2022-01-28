@@ -1,6 +1,6 @@
-# news-app
+edfsfdgfdgvdgfds
 
-### Описание проекта
+# news-app
 
 ## Project setup
 ```
