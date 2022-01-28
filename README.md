@@ -1,4 +1,4 @@
-# my-app
+# news-app
 
 ## Project setup
 ```
