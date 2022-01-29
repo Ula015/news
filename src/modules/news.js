@@ -1,6 +1,6 @@
 import axios from "@/plugins/axios/news";
 /**
- * Function topHeadlines and everything. Makes a request to API to receive news.
+ * Функции topHeadlines и everything делает запрос на API для получения новостей.
  * @param {String} query
  */
 export async function topHeadlines(country = "ua", category = "business") {
@@ -10,9 +10,8 @@ export async function topHeadlines(country = "ua", category = "business") {
     );
     return response.articles;
   } catch (err) {
-    // TODO: This is where I have to handle the error.
     console.log(err);
-    return Promise.reject(err); // returning promise status
+    return Promise.reject(err);
   }
 }
 
@@ -23,8 +22,7 @@ export async function everything(query) {
     );
     return response.articles;
   } catch (err) {
-    // TODO: This is where I have to handle the error.
     console.log(err);
-    return Promise.reject(err); // returning promise status
+    return Promise.reject(err);
   }
 }

@@ -46,9 +46,8 @@ const locations = {
         const countries2 = Object.values(countries);
         commit("COUNTRIES_LIST", countries2);
       } catch (err) {
-        // TODO: This is where I have to handle the error.
         console.log(err);
-        Promise.reject(err); // returning promise status
+        Promise.reject(err);
       }
     },
     async fetchCities({ commit, getters }, countryName) {

@@ -1,6 +1,6 @@
 import axios from "../plugins/axios/signUp/index";
 /**
- * Function getUser. Make login request to API.
+ * Функция getUser делает запрос на API для получения информации о пользователе
  * @param {String} id
  */
 export async function getUser(id) {
@@ -8,8 +8,7 @@ export async function getUser(id) {
     const response = await axios.get(`/users/get-info/${id}`);
     return response;
   } catch (error) {
-    // TODO: This is where I have to handle the error.
     console.log(error);
-    return Promise.reject(error); // returning promise status.
+    return Promise.reject(error);
   }
 }

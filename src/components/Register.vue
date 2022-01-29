@@ -180,9 +180,8 @@ export default {
           }, 2500);
         } catch (error) {
           this.loadDialog = false;
-          // TODO: This is where I have to handle the error.
           console.log(error);
-          Promise.reject(error); // returning promise status.
+          Promise.reject(error);
         }
       }
     },

@@ -14,15 +14,6 @@ const locations = {
     getCountry: ({ country }) => country,
     getCategory: ({ category }) => category,
     getSearchText: ({ searchText }) => searchText,
-    /*
-      Object.keys(news)
-          .slice(from, to)
-          .reduce((result, key) => {
-            result[key] = news[key];
-
-            return result;
-      }, {})
-    */
   },
 
   mutations: {
@@ -92,9 +83,8 @@ const locations = {
           commit("NEWS_LIST", news2);
         }
       } catch (err) {
-        // TODO: This is where I have to handle the error.
         console.log(err);
-        Promise.reject(err); // returning promise status
+        Promise.reject(err);
       }
     },
 

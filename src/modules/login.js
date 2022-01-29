@@ -1,7 +1,7 @@
 import axios from "../plugins/axios/signUp/index";
 import Vue from "vue";
 /**
- * Function login. Make login request to API.
+ * Функция login деалет запрос на авторизацию.
  * @param {String} email
  * @param {String} password
  */

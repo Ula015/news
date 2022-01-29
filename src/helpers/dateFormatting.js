@@ -1,3 +1,5 @@
+// функция форматирования даты
+
 export function day(data) {
   return Number(data.split("-")[0]);
 }

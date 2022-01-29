@@ -1,6 +1,7 @@
 import axios from "../plugins/axios/signUp/index";
 /**
- * Function getUser. Makes a request to API to receive countries and cities list.
+ * Функция countries делает запрос на API для получения списка стран
+ * Функция cities делает запрос на API для получения списка городов
  * @param {String} index
  */
 class CitiesApi {

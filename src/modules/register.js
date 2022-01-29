@@ -1,7 +1,7 @@
 import axios from "../plugins/axios/signUp/index";
 import Vue from "vue";
 /**
- * Function signUp. Make signUp request to API
+ * Функция signUp делает запрос на API для регистрации ползователя.
  * @param {String} email
  * @param {String} password
  * @param {String} nickname
@@ -60,8 +60,7 @@ export async function signUp(
     });
     return response.data;
   } catch (error) {
-    // TODO: This is where I have to handle the error.
     console.log(error);
-    return Promise.reject(error); // returning promise status.
+    return Promise.reject(error);
   }
 }

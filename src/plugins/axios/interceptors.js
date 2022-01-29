@@ -29,13 +29,12 @@ function getClearResponse(res) {
 }
 
 function onError(err) {
-  // TODO: This is where I have to handle the error.
   Vue.notify({
     text: err.response.data.message,
     type: "error",
     speed: 1000,
   });
-  return Promise.reject(err); // returning promise status
+  return Promise.reject(err);
 }
 
 export function setTokenFunction(axios) {
