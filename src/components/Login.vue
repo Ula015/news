@@ -119,9 +119,8 @@ export default {
           this.loadDialog = false;
           this.$refs.pwd.reset();
           this.loginPassword = "";
-          // TODO: This is where I have to handle the error.
           console.log(error);
-          Promise.reject(error); // returning promise status.
+          Promise.reject(error);
         }
       }
     },
