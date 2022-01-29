@@ -11,7 +11,6 @@ export async function login(email, password) {
       `/auth/login`,
       JSON.stringify({ email, password })
     );
-    //Success notification
     Vue.notify({
       text: "Data is correct!",
       type: "success",
@@ -20,6 +19,6 @@ export async function login(email, password) {
     return response;
   } catch (error) {
     console.log(error);
-    return Promise.reject(error); // returning promise status.
+    return Promise.reject(error);
   }
 }
